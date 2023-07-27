@@ -26,6 +26,10 @@ header{
     color: white;
 }
 
+.navbar-brand img{
+    width: 20%;
+}
+
 .navbar-dark .navbar-nav .nav-link:hover{
     color: yellowgreen;
 }
@@ -190,13 +194,13 @@ button:active {
 
 /* Footer */
 
+.bgNegro{
+    background-color: #000000;
+}
+
 footer{
     background-color: #000;
-    color: white;
-}
-footer .contenedorFooter{
-    background-color: #000000;
-    padding: 30px;
+    
 }
 
 footer .contenedorFooter li{
@@ -204,6 +208,8 @@ footer .contenedorFooter li{
 }
 
 .redes i{
+    width: 10%;
+    font-size: 1.50rem;
     padding-right: 20px;
 }
 
@@ -245,6 +251,10 @@ footer .contenedorFooter li{
     text-align: center;
 }
 
+.cardMarcas img{
+    width: 50%;
+}
+
 /* pagina servicios */
 
 .SectionServicios{
@@ -265,8 +275,32 @@ footer .contenedorFooter li{
         width: 90%;
         margin: 10px;
     }
+    .divUno, 
+    .divDos{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+     .divUno{
+        margin-top: 1rem;
+    }
+
+    .divDos{
+        margin-bottom: 1rem;
+    }
+    
+    .divUno img,
+    .divDos img{
+        width: 70%;
+    }
   }
 
+  @media screen and (max-width: 991px){
+    .nav-item{
+        padding: 5px;
+    }
+  }
    
  @media screen and (min-width: 992px) {
     .cardPrecios{
