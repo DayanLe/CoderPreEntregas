@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Barra de navegacion */
+
+header{
+    background-color: #000000;
+}
+.navbar {
+    background-color: black;
+    background: #000000;
+    box-shadow: 5px 5px 8px #9c9898,
+        -5px -5px 8px #b1aeae;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-brand img{
+    width: 20%;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: yellowgreen;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.nav-item{
+    padding: 40px;
+}
+/* Fin barra de navegacion */
+
+/* Inicio del video */
+
+.videoHeader{
+    width: 100%;
+    background-color: black;
+}
+
+.videoHeader video{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* Fin modificaciones del video */
+
+/* inicio del main con le pirmer texto*/
+
+
+.cardHeader{
+    border: 0;
+}
+
+.primerSection h1{
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.primerSection h1 span{
+    color: yellowgreen;
+}
+
+.parrafoHeader{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+
+/* Seccion Garantia, Servicios, Productos */
+
+
+.segundoSection, .tercerSection, .cuartoSection{
+    background-color: #000;
+    text-align: center;
+
+}
+
+.lead{
+    font-size: 1rem;
+}
+
+.tercerSection li{
+    list-style: none;
+}
+
+.divImagen img{
+    aspect-ratio: 1 / 1;
+}
+
+
+/* Seccion Proyectos */
+
+.sectionCinco{
+    background-color: #000000;
+    text-align: center;
+}
+
+/* carrusel */
+
+
+.imgProyectos{
+    width: 90%;
+    margin: 10px auto;
+    height: 50vh;
+    background: #000;
+    border: 0.5px solid black;
+}
+
+.imgProyectos img{
+    width: 0px;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 70%;
+    transition: .5s ease;
+}
+
+.imgProyectos img:hover{
+    width: 30%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Tabla de precios */
+
+.cardPrecios {
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    color: black;
+    margin: 5px;
+  }
+  
+  .cardPrecios:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .cardPrecios:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  /* BOTON */
+
+button {
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+  
+button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+  };
+  
+button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+};
+
+   /* Fin Tabla de precios */
+
+/* Footer */
+
+.bgNegro{
+    background-color: #000000;
+}
+
+footer{
+    background-color: #000;
+    
+}
+
+footer .contenedorFooter li{
+    list-style: none;
+}
+
+.redes i{
+    width: 10%;
+    font-size: 1.50rem;
+    padding-right: 20px;
+}
+
+.primerColFooter{
+    align-items: flex-start;
+}
+
+.primerColFooter .redes{
+    text-align: inherit;
+}
+
+.logoFooter{
+    text-align: center;
+}
+
+.divParrafoFooter{
+    text-align: end;
+}
+
+.divParrafoFooter .parrafoFooter{
+    margin-bottom: 0%;
+}
+
+/* pagina contacto */
+
+.contenedorForm{
+    background-color: #000000;
+}
+
+.form-control, textarea{
+    background-color: #cecece3c;
+    color: white;
+}
+
+/* Pagina marcas */
+
+
+.h1Marcas, .pMarcas{
+    text-align: center;
+}
+
+.cardMarcas img{
+    width: 50%;
+}
+
+/* pagina servicios */
+
+.SectionServicios{
+    text-align: center;
+
+}
+
+.SectionServicios .lead{
+    padding: 20px;
+}
+
+
+/* Pagina Nosotros */
+
+
+@media screen and (max-width: 767px) {
+    .cardPrecios {
+        width: 90%;
+        margin: 10px;
+    }
+    .divUno, 
+    .divDos{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+     .divUno{
+        margin-top: 1rem;
+    }
+
+    .divDos{
+        margin-bottom: 1rem;
+    }
+    
+    .divUno img,
+    .divDos img{
+        width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 991px){
+    .nav-item{
+        padding: 5px;
+    }
+  }
+   
+ @media screen and (min-width: 992px) {
+    .cardPrecios{
+        width: 30%;
+    }
+ }
+
