@@ -1,0 +1,19 @@
+{
+  "name": "tercerentrega",
+  "version": "1.0.1",
+  "description": "tercer pre entrega",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DayanLe/CoderPreEntregas.git"
+  },
+  "author": "dayan lenis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DayanLe/CoderPreEntregas/issues"
+  },
+  "homepage": "https://github.com/DayanLe/CoderPreEntregas#readme"
+}

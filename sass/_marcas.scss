@@ -1,0 +1,24 @@
+/* Pagina marcas */
+
+
+.h1Marcas,
+.pMarcas {
+    text-align: center;
+}
+
+.cardMarcas img {
+    width: 50%;
+}
+
+/* pagina servicios */
+
+.SectionServicios {
+    background-color: $bg-negro;
+    text-align: center;
+    color: $color-white;
+    overflow: hidden;
+    .lead{
+        font-size: 1rem;
+        padding: 20px;
+    }
+}

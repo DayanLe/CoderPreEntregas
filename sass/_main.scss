@@ -1,0 +1,148 @@
+/* inicio del main con le pirmer texto*/
+
+
+.primerSection h1 {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.parrafoHeader {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+
+/* Seccion Garantia, Servicios, Productos */
+
+
+.segundoSection,
+.tercerSection,
+.cuartoSection {
+    background-color: $bg-negro;
+    text-align: center;
+    .lead {
+        font-size: 1rem;
+    }
+    .divImagen img {
+        aspect-ratio: 1 / 1;
+    }
+
+}
+
+
+.tercerSection li {
+    list-style: none;
+}
+
+/* Seccion Proyectos */
+
+.sectionCinco {
+    background-color: $bg-negro;
+    text-align: center;
+}
+
+/* carrusel */
+
+
+.imgProyectos {
+    width: 90%;
+    margin: 10px auto;
+    height: 50vh;
+    background: $bg-negro;
+    border: 0.5px solid $bg-negro;
+    img {
+        width: 0px;
+        height: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 70%;
+        transition: .5s ease;
+        &:hover {
+            width: 30%;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+    }
+}
+
+/* Tabla de precios */
+
+.cardPrecios {
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid $color-white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    color: $bg-negro;
+    margin: 5px;
+}
+
+.cardPrecios:hover {
+    border: 1px solid $bg-negro;
+    transform: scale(1.05);
+}
+
+.cardPrecios:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+} 
+
+/* BOTON */
+
+.divBotonPrecios {
+    a {
+        text-decoration: map-get($map: $btn-estilos, $key: decoracion);
+        background-color: map-get($map: $btn-estilos, $key: background);
+        border-radius: map-get($map: $btn-estilos, $key: bordeRedondo);
+        font-size: map-get($map: $btn-estilos, $key: tFuente);
+        font-weight: map-get($map: $btn-estilos, $key: anchoFuente);
+        padding: map-get($map: $btn-estilos, $key: padding);
+        transition: map-get($map: $btn-estilos, $key: transition);
+        border: map-get($map: $btn-estilos, $key: border);
+        box-shadow: map-get($map: $btn-estilos, $key: sombra);
+
+        &:hover {
+            transform: translateY(-4px) translateX(-2px);
+            box-shadow: 2px 5px 0 0 $bg-negro;
+        }
+    }
+}
+
+/* Fin Tabla de precios */
+
+@media screen and (max-width: 767px) {
+    .cardPrecios {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .divUno,
+    .divDos {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .divUno {
+        margin-top: 1rem;
+    }
+
+    .divDos {
+        margin-bottom: 1rem;
+    }
+
+    .divUno img,
+    .divDos img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cardPrecios {
+        width: 30%;
+    }
+}

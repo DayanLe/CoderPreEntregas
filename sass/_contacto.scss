@@ -1,0 +1,25 @@
+/* pagina contacto */
+/* AQUI VA EL PRIMER extend */
+
+.contenedorForm {
+    background-color: $bg-negro;
+    border-radius: 10px;
+
+    .btn--enviar {
+        border-radius: 10px;
+        border: 1px solid $color-white;
+        padding: $padding-form;
+    }
+
+    .btn--limpiar {
+        @extend .btn--enviar;
+    }
+}
+
+.form-control,
+textarea {
+    background-color: #cecece3c;
+    color: $color-white;
+    border-radius: 10px;
+    padding: $padding-form;
+}

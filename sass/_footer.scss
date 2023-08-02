@@ -1,0 +1,32 @@
+/* Footer */
+
+.bgNegro {
+    background-color: $bg-negro;
+}
+
+footer {
+    background-color: $bg-negro;
+    .primerColFooter {
+        align-items: flex-start;
+        .redes {
+            i {
+                width: 10%;
+                font-size: 1.50rem;
+                padding-right: 20px;
+            }
+        }
+    }
+    .logoFooter {
+        text-align: center;
+    }
+    .divParrafoFooter {
+        text-align: end;
+        .parrafoFooter {
+            margin-bottom: 0%;
+        }
+    }
+}
+
+/* .primerColFooter .redes {
+    text-align: inherit;
+} */

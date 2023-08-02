@@ -1,0 +1,52 @@
+/* Barra de navegacion */
+
+header {
+    background-color: $bg-negro;
+    overflow: hidden;
+
+    .navbar {
+        background: $bg-negro;
+        box-shadow: 5px 5px 8px #9c9898,
+            -5px -5px 8px #b1aeae;
+
+        .navbar-brand img {
+            width: 30%;
+        }
+
+        .nav-item {
+            padding: 40px;
+        }
+    }
+    .videoHeader {
+        width: 100%;
+        background-color: $bg-negro;
+    
+        video {
+            width: 100%;
+        }
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-white;
+        color: $primary-color;
+        border-radius: 10%;
+    }
+}
+
+
+/* Fin barra de header */
+@media screen and (max-width: 991px) {
+    header .navbar {
+        .nav-item {
+            padding: 5px;
+        }
+
+        .navbar-brand img {
+            width: 20%;
+        }
+    }
+}
