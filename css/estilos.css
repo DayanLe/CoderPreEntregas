@@ -55,6 +55,11 @@ header .videoHeader video {
 }
 
 /* Fin barra de header */
+@media screen and (max-width: 400px) {
+  header .navbar .navbar-brand {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 991px) {
   header .navbar .nav-item {
     padding: 5px;
