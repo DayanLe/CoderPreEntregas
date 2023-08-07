@@ -2,8 +2,9 @@
 
 header {
     background-color: $bg-negro;
-    overflow: hidden;
-
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     .navbar {
         background: $bg-negro;
         box-shadow: 5px 5px 8px #9c9898,
@@ -15,14 +16,24 @@ header {
 
         .nav-item {
             padding: 40px;
+            overflow-x: hidden;
         }
     }
     .videoHeader {
+        max-width: 100%;
+        position: relative;
+        overflow-x: hidden;
         width: 100%;
+        height: 0;
         background-color: $bg-negro;
-    
+        padding-bottom: 56.25%;
         video {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

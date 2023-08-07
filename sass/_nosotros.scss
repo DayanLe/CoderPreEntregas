@@ -5,8 +5,26 @@
 @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
   to {-webkit-transform: rotate(360deg);}}
 .bach{
-    -webkit-animation: 10s rotate linear infinite;
-    animation: 10s rotate linear infinite;
+    -webkit-animation: 15s rotate linear infinite;
+    animation: 15s rotate linear infinite;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
+    width: 30%;
+    height: 30%;
+}
+
+@media screen and (max-width: 667px) {
+    .bach{
+      width: 50%;
+      height: 50%;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .bach{
+      margin: 0 auto;
+      width: 35%;
+      height: 35%;
+    }
 }
